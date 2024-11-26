@@ -1,0 +1,181 @@
+@import url('reset.css');
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Noto Sans", serif;
+    line-height: 1.5;
+    background-color: #f7e9d8;
+    color:#333333;
+}
+
+/* --------------------------header-------------------------------- */
+header{
+    width: 100%;
+    height: 72px;
+    background-color: #1C3879;
+}
+header nav{
+    /* outline:1px solid red; */
+
+    width: 1200px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+header nav img{
+    display: block;
+}
+header nav > a{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+}
+
+header .header_content{
+    /* outline: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 70%;
+}
+header .header_center_content{
+    /* border:2px solid red; */
+
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: 400px;
+}
+header .header_center_content span{
+    display: block;
+    position: relative;
+}
+header .header_center_content span a{
+    display: block;
+    width: 100px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+header .header_center_content span > a:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+header .header_center_content span:hover ul{
+    display: block;
+    z-index: 2;/*避免被swipper蓋過去*/
+}
+
+header .header_center_content span ul a:hover{
+    color: #ffffff;
+    background-color: #e60012;
+}
+
+/* header .header_center_content span li a:hover{
+    
+} */
+
+header .header_center_content ul{
+    position: absolute;
+    left:0;
+    top: 30px;
+    background-color: #F7E9D8;
+    border-radius: 5px;
+    border: 1px solid #F5D080;
+    border-bottom: none;
+
+    display: none;
+}
+header .header_center_content span li{
+    border-radius: 5px;
+    border-bottom: 1px solid #F5D080;
+}
+header .header_center_content span li a{
+    display: block;
+    width: 100px;
+    color: #333333;
+    text-decoration: none;
+}
+/* --------------------header right content------------------------------------ */
+header .header_right_content{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header .header_right_content input{
+    width: 200px;
+    height: 48px;
+}
+
+header .header_right_content i{
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.header_right_content .input_search{
+    position: relative;
+}
+
+header .header_right_content .input_search > i {
+    position: absolute;
+    right:0;
+    top:0;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    padding-right: 10px;/*增加button點擊範圍*/
+    /*或加
+    width: 44px;
+    justify-content: center;
+    */
+}
+/* ----------------------------footer---------------------------------------------- */
+footer{
+    width: 100%;
+    height: 72px;
+    background-color: #1C3879;
+}
+
+footer nav{
+    /* outline:1px solid red; */
+
+    width: 1200px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+
+footer nav p{
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+footer nav img{
+    display: block;
+}
+
+footer .footer_right_content{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 16px;
+}
+
+footer .footer_right_content i{
+    font-size: 2.5rem;
+    color: #ffffff;
+}

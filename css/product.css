@@ -1,0 +1,193 @@
+.breadcrumb{
+    max-width: 1200px;
+    width: 100%;
+    margin: 24px auto 44px;
+    padding-left: 28px;
+}
+
+.breadcrumb span{
+    font-size: 2rem;
+}
+
+.breadcrumb span a{
+    color: #333333;
+    text-decoration: none;
+}
+/* ------------------------------------------------------ */
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 24px;
+
+    display: flex;
+    gap: 20px;
+    /* outline: 1px solid red; */
+}
+/* -------------------------left_content-------------------------------------*/
+/* -------------------------swipper-------------------------------------*/
+.swiper{
+    max-width: 600px;
+    width: 100%;
+    height: 80px;
+    /* border:1px solid; */
+}
+
+.wrapper .swiper-slide img{
+    width: 80px;
+}
+
+.swiper-button-prev::after,.swiper-button-next::after{
+    color: #1c3879;
+}
+/* -------------------------right_content-------------------------------------*/
+.right_content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.right_content h1{
+    font-size: 2.4rem;
+}
+
+.grade{
+    font-size: 2rem;
+}
+
+.grade span{
+    border-right: 1px solid #999999;
+    margin-right: 4px;
+}
+
+.grade span:last-child{
+    border-right:0;
+}
+
+.cost{
+    font-size: 2.4rem;
+}
+
+.right_content h1:nth-of-type(2),h1:nth-of-type(3){
+    border-bottom: 1px solid #333333;
+}
+
+.product_content{
+    font-size: 2rem;
+    height: 240px;
+}
+
+.category{
+    font-size: 2.4rem;
+}
+
+.product_status{
+    font-size: 2.4rem;
+}
+
+.count{
+    border-bottom: 1px solid #333333;
+}
+
+.count span{
+    font-size: 2rem;
+}
+
+.count button{
+    padding: 0;
+    width: 32px;
+    height: 36px;/*硬調的*/
+    font-size: 2.4rem;
+    background-color: #f7e9d8;
+    border: 2px solid #999999;
+    cursor: pointer;
+}
+
+.count input{
+    padding: 0;
+    width: 50px;
+    height: 32px;
+    font-size: 2.4rem;
+    text-align: center;
+    background-color: #f7e9d8;
+    border: 2px solid #999999;
+}
+
+.buy_btn{
+    display: flex;
+    justify-content: space-around;
+}
+.buy_btn button{
+    font-size: 2rem;
+    width: 240px;
+    height: 50px;
+    background-color: #e60012;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+/* ---------------------recommand------------------- */
+.recommand{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 24px;
+}
+.recommand h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+.recommand .more{
+    text-align: right;
+
+    margin-bottom: 4px;
+}
+
+.recommand .more > a{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+}
+
+.recommand_content{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card{
+    max-width: 200px;
+    width: 100%;
+    height: 350px;
+    font-size: 2rem;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .25);
+    transition: all 1s;
+}
+
+.card:hover{
+    transform: translateY(12px);
+}
+
+.card .card_content{
+    color: #333333;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.card p{
+    padding: 0 8px;
+}
+
+.card_bottom{
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_bottom a{
+    color: #333333;
+}

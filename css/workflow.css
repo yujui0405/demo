@@ -1,0 +1,146 @@
+h1{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+.wrapper{
+    width: 1200px;
+    margin: 48px auto 24px;
+}
+/* -------------------workflow------------------------------ */
+.wrapper .workflow{
+    background-image: url(../img/workflow/Vector.png);
+    height: 1018px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.workflow .step1{
+    width: 400px;
+    position: absolute;
+    top: 90px;
+    left: 160px;
+
+    perspective: 500px;
+    transition: all 1s;
+}
+
+.workflow .step_up{
+    background-color: #e60012;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding-left: 12px;
+}
+
+.workflow .step_up span:nth-child(1){
+    font-size: 3.6rem;
+    font-weight: bold;
+    display: inline-block;
+    width: 40px;
+    height: 55px;
+    background-color: #1c3879;
+    color: #ffffff;
+    text-align: center;
+    line-height: 55px;
+}
+
+.workflow .step_up span:nth-child(2){
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.workflow .step_down{
+    background-color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 12px;
+}
+
+.workflow .step_down span{
+    font-size: 2rem;
+}
+
+.workflow .step2{
+    width: 400px;
+    position: absolute;
+    top: 260px;
+    left: 640px;
+
+    perspective: 500px;
+    transition: all 1s;
+}
+
+.workflow .step3{
+    width: 400px;
+    position: absolute;
+    top: 430px;
+    left: 160px;
+
+    perspective: 500px;
+    transition: all 1s;
+}
+
+.workflow .step4{
+    width: 400px;
+    position: absolute;
+    top: 600px;
+    left: 640px;
+
+    perspective: 500px;
+    transition: all 1s;
+}
+
+.workflow .step5{
+    width: 400px;
+    position: absolute;
+    top: 770px;
+    left: 160px;
+
+    perspective: 500px;
+    transition: all 1s;
+}
+
+.workflow .step6{
+    width: 400px;
+    position: absolute;
+    top: 940px;
+    left: 640px;
+
+    perspective: 500px;
+    transition: all 1s;
+}
+
+.step1:hover{
+    transform: scale(1.1,1.1);
+}
+.step2:hover{
+    transform: scale(1.1,1.1);
+}
+.step3:hover{
+    transform: scale(1.1,1.1);
+}
+.step4:hover{
+    transform: scale(1.1,1.1);
+}
+.step5:hover{
+    transform: scale(1.1,1.1);
+}
+.step6:hover{
+    transform: scale(1.1,1.1);
+}
+/* ------------------line_content------------------------------- */
+.line_content img{
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.line_content p{
+    font-size: 2rem;
+    text-align: center;
+}

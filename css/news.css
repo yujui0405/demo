@@ -1,0 +1,92 @@
+.wrapper{
+    width: 1200px;
+    margin: 24px auto;
+}
+/* ------------------------------------------- */
+.wrapper h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-left: 28px;
+    margin-bottom: 8px;
+}
+
+.wrapper > p{
+    font-size: 2rem;
+    background-color: #e60012;
+    color: #ffffff;
+    width: 1100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+
+    margin: 0 auto 24px;
+}
+/* --------------------all_news----------------------- */
+
+.wrapper .all_news{
+    /* outline: 1px solid red; */
+
+    width: 1000px;
+
+    margin: 0 auto 80px;
+}
+
+.wrapper .all_news .news{
+    border: 1px dashed #333333;
+    border-radius: 30px;
+    height: 60px;
+    cursor: pointer;
+
+    padding: 0 40px;
+    margin-bottom: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 底下權重問題，所以分兩個寫，li和span*/
+.wrapper .all_news .news:hover{
+    background-color: #333333;
+}
+.wrapper .all_news .news:hover span{
+    color: #ffffff;
+}
+.wrapper .all_news .news span{
+    font-size: 2rem;
+    color: #333333;
+}
+
+.wrapper .all_news .news_content{
+    border: 1px solid #333333;
+    font-size: 2rem;
+    width: 850px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, .25);
+
+    padding: 10px 20px;
+    margin: 0 auto 24px;
+}
+/* ---------------------page_link-------------------------------- */
+
+.wrapper .page_link{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .page_link .page a{
+    font-size: 2rem;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #333333;
+}
+
+.wrapper .page_link .page:nth-child(2) a{
+    background-color: #ff0000;
+    color: #ffffff;
+}

@@ -1,0 +1,161 @@
+.wrapper{
+    width: 1200px;
+    margin: 24px auto;
+}
+
+/* -------------------------swipper-------------------------------------*/
+.swiper{
+    width: 1200px;
+    height: 400px;
+    /* border:1px solid; */
+}
+
+.wrapper .swiper-slide img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.swiper-button-prev::after,.swiper-button-next::after{
+    color: #1c3879;
+}
+
+/* -------------------------------month-------------------------- */
+
+.month{
+    border-top: 10px solid #eeeeee;
+    border-bottom: 10px solid #eeeeee;
+
+    box-sizing: border-box;
+    padding: 20px 40px 8px;
+    margin-top: 24px;
+}
+
+.month h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+.month p{
+    text-align: right;
+
+    margin-bottom: 4px;
+}
+
+.month p > a{
+    /* 實際畫面差2px，原因是a沒有display:block，吃不到line-height:1.5; */
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+}
+
+.month ul{
+    display: flex;
+    gap:40px
+}
+
+.month ul li{
+    width: 250px;
+}
+
+.month ul li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.month ul img{
+    display: block;
+    margin-bottom: 12px;
+}
+.month ul li span{
+    font-size: 2.4rem;
+
+    display: block;
+    /* text-align: center; */
+}
+/* ---------------------category---------------------------- */
+.category{
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 24px;
+}
+
+.category h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.category ul{
+    display: flex;
+}
+
+.category li{
+    border: 3px solid #eeeeee;
+    padding: 0 12px;
+    /* width: 130px; */
+}
+
+.category ul li a img{
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.category ul li a{
+    text-decoration: none;
+}
+
+.category ul li a span{
+    font-size: 2.4rem;
+    color: #333333;
+    display: block;
+    text-align: center;
+}
+/* -------------------------news------------------------- */
+.news{
+    margin-top: 24px;
+    padding: 20px;
+}
+
+.news h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.news p{
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+.news p > a{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+}
+
+.news ul li{
+    padding-bottom: 8px;
+    border-bottom: 3px solid #999999;
+}
+
+.news ul li a{
+    text-decoration: none;
+}
+
+.news ul li a span:first-child{
+    margin-right: 12px;
+}
+
+.news ul li a span{
+    font-size: 1.6rem;
+    color: #333333;
+}
+
+.news ul li a:hover span{
+    color: #e60012;
+}

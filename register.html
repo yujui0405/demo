@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./img/logo/logo.svg" alt="" class="logo"></a>
+
+            <div class="header_content">
+                <div class="header_center_content">
+                    <span>
+                        <a href="./news.html">最新消息</a>
+                        <ul>
+                            <li><a href="#">優惠活動</a></li>
+                            <li><a href="./news.html">最新消息</a></li>
+                        </ul>
+                    </span>
+                    <span>
+                        <a href="./workflow.html">日本代購</a>
+                        <ul>
+                            <li><a href="./workflow.html">代購流程</a></li>
+                            <li><a href="#">費用計算</a></li>
+                            <li><a href="#">注意事項</a></li>
+                        </ul>
+                    </span>
+                    <span>
+                        <a href="./all_products.html">商品一覽</a>
+                        <ul>
+                            <li><a href="./all_products.html">商品一覽</a></li>
+                            <li><a href="#">熱門商品</a></li>
+                            <li><a href="#">本月推薦</a></li>
+                        </ul>
+                    </span>
+                    <span>
+                        <a href="">關於我們</a>
+                    </span>
+                </div>
+
+                <div class="header_right_content">
+                    <div class="input_search">
+                        <input type="text" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- 麵包屑 -->
+    <div class="breadcrumb">
+        <span><a href="./index.html">首頁</a> > <a href="./register.html">註冊</a></span>
+    </div>
+    <!-- h1 -->
+    <h1 class="regist_title">註冊</h1>
+
+    <!-- 表單 -->
+    <div class="wrapper">
+
+        <a href="./login.html" class="form_top">登入</a><a href="./register.html" class="form_top">註冊</a>
+        <form action="" class="form_login">
+            <div class="form_login_input">
+                <label for="name">姓名 *</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form_login_input">
+                <label for="phone">電話號碼 *</label>
+                <input type="tel" name="phone" id="phone" required>
+            </div>
+            <div class="form_login_input">
+                <label for="email">電子郵件地址(使用者名稱) *</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form_login_input">
+                <label for="postal">郵遞區號 *</label>
+                <input type="text" name="postal" id="postal" required>
+            </div>
+            <div class="form_login_input">
+                <label for="city">市級 *</label>
+                <select id="city" name="city" required>
+                    <option value="台北市">台北市</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="宜蘭縣">宜蘭縣</option>
+                    <option value="新竹市">新竹市</option>
+                    <option value="新竹縣">新竹縣</option>
+                </select>
+                <select id="area" name="area" required>
+                    <option value="中正區">中正區</option>
+                    <option value="大同區">大同區</option>
+                    <option value="中山區">中山區</option>
+                    <option value="松山區">松山區</option>
+                    <option value="大安區">大安區</option>
+                    <option value="萬華區">萬華區</option>
+                </select>     
+            </div>
+            <div class="form_login_input">
+                <label for="street">街道 *</label>
+                <input type="text" name="street" id="street" required>
+            </div>
+            <div class="form_login_input">
+                <label for="password">密碼 *</label>
+                <input type="password" name="password" id="password" required>
+                <label for="password_confirm">確認密碼 *</label>
+                <input type="password" name="password_confirm" id="password_confirm" required>
+            </div>
+            <div class="form_bottom">
+                <input type="checkbox" name="private" id="private" required>
+                <label for="private">同意隱私政策</label>
+                <br>
+                <a href="#">個人資訊保護方針 ></a>
+            </div>
+
+            <input type="submit" value="確認" class="submit">
+        </form>
+        
+    </div>
+
+    <footer>
+        <nav>
+            <p>© Copyright 2019</p>
+            <a href="index.html"><img src="./img/logo/logo.svg" alt="" class="logo"></a>
+            <div class="footer_right_content">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

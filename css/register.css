@@ -1,0 +1,158 @@
+.breadcrumb{
+    max-width: 1200px;
+    width: 100%;
+    margin: 24px auto 44px;
+    padding-left: 28px;
+}
+
+.breadcrumb span{
+    font-size: 2rem;
+}
+
+.breadcrumb span a{
+    color: #333333;
+    text-decoration: none;
+}
+/* ------------------------------------------------------------ */
+.regist_title{
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;  
+}
+/* --------------------------form---------------------------------- */
+.wrapper{
+    max-width: 600px;
+    width: 100%;
+    
+    outline: 3px solid #999999;
+    margin: 0 auto 24px;
+}
+
+.wrapper .form_top{
+    outline: 3px solid #999999;
+
+    display: inline-block;
+    width: 50%;
+    line-height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+}
+
+.wrapper .form_top:nth-child(2){
+    background-color: #e60012;
+    color: #ffffff;
+}
+
+.form_login{
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.form_login_input{
+    position: relative;
+
+    margin-bottom: 24px;
+}
+
+.form_login_input label{
+    font-size: 2rem;
+    position: absolute;
+    top: -20px;
+    left: 70px;
+    background-color: #f7e9d8;
+}
+
+#name, #phone, #email, #street{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f7e9d8;
+    font-size: 2rem;
+}
+
+/* 框框大小樣式 */
+#postal,#city,#area{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f7e9d8;
+    font-size: 2rem;
+}
+/* ----------form表單不一樣排列----------------*/
+.form_login .form_login_input:nth-child(4){
+    text-align: left;
+    margin-left: 44px;
+}
+/* 因是跟最外層div所以內容從置中到靠左，label要調位置 */
+.form_login_input:nth-child(4) label{
+    left: 28px;
+}
+/* 靠左 */
+.form_login_input:nth-child(5){
+    text-align: left;
+    margin-left: 44px;
+}
+
+.form_login_input:nth-child(5) label{
+    left: 28px;
+}
+
+.form_login_input:nth-child(5) #city{
+    border: 2px solid #333333;
+}
+
+.form_login_input:nth-child(5) #area{
+    border: 2px solid #333333;
+}
+
+/* 框框大小樣式 */
+#password,#password_confirm{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f7e9d8;
+    font-size: 2rem;
+}
+/* 靠中對齊 */
+.form_login_input:nth-child(7) label:nth-child(3){
+    left: 325px;
+}
+/* --------------------form_bottom---------------------------- */
+.form_bottom{
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.form_bottom #private{
+    width: 24px;
+    height: 24px;
+}
+
+.form_bottom > label{
+    display: inline-block;
+}
+
+.form_bottom > a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.form_bottom > a:hover{
+    color: #e60012;
+}
+
+.submit{
+    font-size: 2rem;
+    width: 240px;
+    height: 50px;
+    background-color: #e60012;
+    color: #ffffff;
+    border: 0;
+
+    margin-bottom: 24px;
+}
+/* ---------------------------------------------------------- */
