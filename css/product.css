@@ -37,6 +37,7 @@
 
 .wrapper .swiper-slide img{
     width: 80px;
+    cursor: pointer;
 }
 
 .swiper-button-prev::after,.swiper-button-next::after{
