@@ -10,4 +10,11 @@ $(document).ready(function(){
             nextEl: '.swiper-button-next',
         }
     });
+
+    $('.swiper-wrapper img').click(function(){
+        let picSrc = $(this).attr('src');
+        $('.big_img').attr('src',picSrc);
+         
+    });
+
 })
