@@ -14,7 +14,8 @@ $(document).ready(function(){
     $('.swiper-wrapper img').click(function(){
         let picSrc = $(this).attr('src');
         $('.big_img').attr('src',picSrc);
-         
+        $(this).addClass('active');
+        $('.small_img').not(this).removeClass('active');
     });
 
 })
