@@ -29,6 +29,10 @@
     margin: 0 auto 24px;
 }
 
+.wrapper_off{
+    display: none;
+}
+
 .wrapper .form_top{
     outline: 3px solid #999999;
 
