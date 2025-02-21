@@ -39,13 +39,16 @@
     text-align: center;
     color: #333333;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .wrapper .form_top:nth-child(2){
+    
+}
+.wrapper .form_on{
     background-color: #e60012;
     color: #ffffff;
 }
-
 .form_login{
     padding-top: 60px;
     text-align: center;
@@ -152,6 +155,7 @@
     background-color: #e60012;
     color: #ffffff;
     border: 0;
+    cursor: pointer;
 
     margin-bottom: 24px;
 }

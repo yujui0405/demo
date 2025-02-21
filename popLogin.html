@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper_popup">
+        <div class="wrapper_login">
+            <h1 class="login_title">登入</h1>
+            <!-- 表單 -->
+            <div class="wrapper">
+        
+                <div class="form_top form_on">登入</div><div class="form_top">註冊</div>
+                <form action="" class="form_login">
+                    <div class="form_login_input">
+                        <label for="email">電子郵件地址(使用者名稱) *</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form_login_input">
+                        <label for="password">密碼 *</label>
+                        <input type="password" name="password" id="password_login" required>
+                    </div>
+                    <input type="submit" value="登入" class="submit">
+                </form>
+                <div class="forget_password">
+                    <a href="#" class="form_bottom">忘記密碼</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="wrapper_register">
+            <!-- h1 -->
+            <h1 class="regist_title">註冊</h1>
+
+            <!-- 表單 -->
+            <div class="wrapper">
+
+                <div class="form_top">登入</div><div class="form_top form_on">註冊</div>
+                <form action="" class="form_login">
+                    <div class="form_login_input">
+                        <label for="name">姓名 *</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form_login_input">
+                        <label for="phone">電話號碼 *</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="form_login_input">
+                        <label for="email">電子郵件地址(使用者名稱) *</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form_login_input">
+                        <label for="postal">郵遞區號 *</label>
+                        <input type="text" name="postal" id="postal" required>
+                    </div>
+                    <div class="form_login_input">
+                        <label for="city">市級 *</label>
+                        <select id="city" name="city" required>
+                            <option value="台北市">台北市</option>
+                            <option value="基隆市">基隆市</option>
+                            <option value="新北市">新北市</option>
+                            <option value="宜蘭縣">宜蘭縣</option>
+                            <option value="新竹市">新竹市</option>
+                            <option value="新竹縣">新竹縣</option>
+                        </select>
+                        <select id="area" name="area" required>
+                            <option value="中正區">中正區</option>
+                            <option value="大同區">大同區</option>
+                            <option value="中山區">中山區</option>
+                            <option value="松山區">松山區</option>
+                            <option value="大安區">大安區</option>
+                            <option value="萬華區">萬華區</option>
+                        </select>     
+                    </div>
+                    <div class="form_login_input">
+                        <label for="street">街道 *</label>
+                        <input type="text" name="street" id="street" required>
+                    </div>
+                    <div class="form_login_input">
+                        <label for="password">密碼 *</label>
+                        <input type="password" name="password" id="password" required>
+                        <label for="password_confirm">確認密碼 *</label>
+                        <input type="password" name="password_confirm" id="password_confirm" required>
+                    </div>
+                    <div class="form_bottom">
+                        <input type="checkbox" name="private" id="private" required>
+                        <label for="private">同意隱私政策</label>
+                        <br>
+                        <a href="#">個人資訊保護方針 ></a>
+                    </div>
+
+                    <input type="submit" value="確認" class="submit">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
