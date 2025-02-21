@@ -88,6 +88,23 @@ input[type="checkbox"]{
     margin: 0 4px;
 }
 /* ------------------right_content---------------------------------- */
+.right_content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.no-item{
+    margin: 0 auto;
+    text-align: center;
+    flex-basis: 1;
+    font-size: 5rem;
+}
+.no-itemSearch{
+    display: block;
+    margin: 0 auto;
+}
+
 .right_content_ul{
     display: flex;
     flex-wrap: wrap;

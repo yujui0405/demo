@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    $("#for_header").load("../header.html")
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
