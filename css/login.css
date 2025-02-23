@@ -21,19 +21,22 @@
     margin-bottom: 40px;  
 }
 /* --------------------------form---------------------------------- */
-.wrapper{
+.wrapper_popup_detail{
     max-width: 600px;
     width: 100%;
+    background-color: lightyellow;
     
     outline: 3px solid #999999;
     margin: 0 auto 24px;
 }
-
+.wrapper_popup_detail input,.wrapper_popup_detail label{
+    background-color: lightyellow;
+}
 .wrapper_off{
     display: none;
 }
 
-.wrapper .form_top{
+.wrapper_popup_detail .form_top{
     outline: 3px solid #999999;
 
     display: inline-block;
@@ -45,10 +48,10 @@
     text-decoration: none;
 }
 
-.wrapper .form_top:nth-child(1){
+.wrapper_popup_detail .form_top:nth-child(1){
 }
 
-.wrapper .form_on{
+.wrapper_popup_detail .form_on{
     background-color: #e60012;
     color: #ffffff;
 }
@@ -70,18 +73,18 @@
     position: absolute;
     top: -20px;
     left: 70px;
-    background-color: #f7e9d8;
+    /* background-color: #f7e9d8; */
 }
 
 #email, #password_login{
     width: 500px;
     height: 50px;
     border-radius: 10px;
-    background-color: #f7e9d8;
+    /* background-color: #f7e9d8; */
     font-size: 2rem;
 }
 
-.submit{
+.wrapper_popup_detail input.submit{
     font-size: 2rem;
     width: 240px;
     height: 50px;
