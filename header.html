@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/header&popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -43,7 +47,7 @@
     
                 <div class="header_right_content">
                     <div class="input_search">
-                        <input type="text" placeholder="Search">
+                        <input type="text" placeholder="Search" id="search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
@@ -55,7 +59,9 @@
     
         </nav>
     </header>
+    <!-- 遮罩 -->
     <div class="overlay"></div>
+    <!-- popup -->
     <div id="for_popup" class="for_popup_none"></div>
     <script src="./js/header.js"></script>
 

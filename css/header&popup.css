@@ -20,7 +20,7 @@
     right: 0;
     bottom: 0;
     margin: auto auto;
-    z-index: 2;
+    z-index: 3;
     transition: 1s all;
     visibility: visible;
     opacity: 1;

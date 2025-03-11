@@ -1,5 +1,35 @@
 $(document).ready(function(){
-    $("#for_header").load("../header.html")
+    $("#for_header").load("../header.html",function(){
+        $('#search').on('input',function(){
+            let searchName = $(this).val()
+            let cardHideCount = 0
+            let wrongContent = `
+                                <p class="no-item">似乎沒有找到您到的商品!!</p>
+                                <img class="no-itemSearch" src="./img/all_products/no-item.png" alt="">
+                                <p class="no-item">No Result Found</p>
+                                <p class="no-item">We can't find any item matching your search</p>
+                                
+                                `
+            $('.no-item').remove()
+            $('.no-itemSearch').remove()
+            $('.card').each(function(){
+                let cardTitle = $(this).children().children()[1].textContent
+                
+                if(cardTitle.includes(searchName)){
+                    $(this).show()
+                }else{
+                    $(this).hide()
+                    cardHideCount ++ 
+                }
+                if(cardHideCount === 16){
+                    $('.no-item').remove()
+                    $('.no-itemSearch').remove()
+                    $('.right_content').append(wrongContent)
+                }
+            })
+        })
+    })
+    $("#for_footer").load("../footer.html")
     let clicked_cat = 0
     let clicked_pro = 0
     let clicked_cost = 0
@@ -46,32 +76,5 @@ $(document).ready(function(){
     })
 
 
-    $('#search').on('input',function(){
-        let searchName = $(this).val()
-        let cardHideCount = 0
-        let wrongContent = `
-                            <p class="no-item">似乎沒有找到您到的商品!!</p>
-                            <img class="no-itemSearch" src="./img/all_products/no-item.png" alt="">
-                            <p class="no-item">No Result Found</p>
-                            <p class="no-item">We can't find any item matching your search</p>
-                            
-                            `
-        $('.no-item').remove()
-        $('.no-itemSearch').remove()
-        $('.card').each(function(){
-            let cardTitle = $(this).children().children()[1].textContent
-            
-            if(cardTitle.includes(searchName)){
-                $(this).show()
-            }else{
-                $(this).hide()
-                cardHideCount ++ 
-            }
-            if(cardHideCount === 16){
-                $('.no-item').remove()
-                $('.no-itemSearch').remove()
-                $('.right_content').append(wrongContent)
-            }
-        })
-    })
+    
 })

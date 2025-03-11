@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $("#for_header").load("../header.html")
+    $("#for_footer").load("../footer.html")
     let news = [`<span>
                     親愛的會員您好：<br>
                     近期各國出口管制措施相當嚴格，因此我們需要特別提醒各位會員：任何被列為禁運物品的商品，我們將無法協助您辦理退貨或運送回台灣。<br>若您的包裹因禁運品被各國倉庫人員或海關人員拒收而被丟棄，natalie shop將無法提供任何賠償。<br>為了避免不必要的麻煩與損失，請您務必注意我們網站上的禁運物品一覽表。<br>
