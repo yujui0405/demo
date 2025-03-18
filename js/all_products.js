@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //要寫在callback function內才找的到
     $("#for_header").load("../header.html",function(){
         $('#search').on('input',function(){
             let searchName = $(this).val()

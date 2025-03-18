@@ -7,7 +7,7 @@ $(document).ready(function(){
         direction: 'horizontal',
         loop: true,
         slidesPerView: 2.2,
-        // spaceBetween: 10,
+        spaceBetween: 20,
         autoplay: {
             delay: 3000,
         },
@@ -16,6 +16,24 @@ $(document).ready(function(){
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+
+            1200: {
+                slidesPerView: 2.2,
+            },
+            990: {
+                slidesPerView: 2,
+            },
+            830: {
+                slidesPerView: 1,
+            },
+            430: {
+                slidesPerView: 1,
+            },
         }
     });
 })

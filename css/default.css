@@ -11,18 +11,18 @@ body{
 
 /* --------------------------header-------------------------------- */
 header{
-    width: 100%;
+    max-width: 100%;/*記得用%不要用vw，因為load進來的沒有右邊的滾動條，會超出20px，導致不對齊wrapper*/
     height: 72px;
     background-color: #1C3879;
 }
 header nav{
     /* outline:1px solid red; */
 
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 72px;
     display: flex;
     justify-content: space-between;
-
     margin: 0 auto;
 }
 
@@ -142,15 +142,15 @@ header .header_right_content .input_search > i {
 }
 /* ----------------------------footer---------------------------------------------- */
 footer{
-    width: 100%;
+    max-width: 100%;
     height: 72px;
     background-color: #1C3879;
 }
 
 footer nav{
     /* outline:1px solid red; */
-
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 72px;
     display: flex;
     justify-content: space-between;

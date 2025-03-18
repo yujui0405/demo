@@ -1,17 +1,21 @@
 .wrapper{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 24px auto;
+    /* padding-left: 60px; */
 }
 
 /* -------------------------swipper-------------------------------------*/
 .swiper{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     height: 400px;
     /* border:1px solid; */
 }
 
 .wrapper .swiper-slide img{
-    width: 500px;
+    max-width: 500px;
     border-radius: 10px;
 }
 
