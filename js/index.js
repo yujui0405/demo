@@ -7,15 +7,17 @@ $(document).ready(function(){
     console.log(window.location.search);   // 查询字符串，例如 "?query=123"
     console.log(window.location.hash);     // 锚点，例如 "#section"
     // http://127.0.0.1:5500/index.html
+    // console.log(currentUrl)
     let currentUrl = window.location.protocol + "//" + window.location.hostname 
     if(window.location.port){
         currentUrl += ":" + window.location.port
+        $("#for_header").load(currentUrl + "/header.html")
+        $("#for_footer").load(currentUrl + "/footer.html")
+    }else{
+        $("#for_header").load(currentUrl + "/demo/header.html")
+        $("#for_footer").load(currentUrl + "/demo/footer.html")
     }
-    console.log(currentUrl)
-    // $("#for_header").load("../header.html")
-    // $("#for_footer").load("../fooeter.html")
-    $("#for_header").load(currentUrl + "/header.html")
-    $("#for_footer").load(currentUrl + "/footer.html")
+    
 
     const swiper = new Swiper('.swiper', {
         // Optional parameters
