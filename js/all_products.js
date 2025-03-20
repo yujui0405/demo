@@ -1,37 +1,74 @@
 $(document).ready(function(){
-
-    //要寫在callback function內才找的到
-    $("#for_header").load("../header.html",function(){
-        $('#search').on('input',function(){
-            let searchName = $(this).val()
-            let cardHideCount = 0
-            let wrongContent = `
-                                <p class="no-item">似乎沒有找到您到的商品!!</p>
-                                <img class="no-itemSearch" src="./img/all_products/no-item.png" alt="">
-                                <p class="no-item">No Result Found</p>
-                                <p class="no-item">We can't find any item matching your search</p>
-                                
-                                `
-            $('.no-item').remove()
-            $('.no-itemSearch').remove()
-            $('.card').each(function(){
-                let cardTitle = $(this).children().children()[1].textContent
-                
-                if(cardTitle.includes(searchName)){
-                    $(this).show()
-                }else{
-                    $(this).hide()
-                    cardHideCount ++ 
-                }
-                if(cardHideCount === 16){
-                    $('.no-item').remove()
-                    $('.no-itemSearch').remove()
-                    $('.right_content').append(wrongContent)
-                }
+    let currentUrl = window.location.protocol + "//" + window.location.hostname 
+    if(window.location.port){
+        currentUrl += ":" + window.location.port
+        
+        //要寫在callback function內才找的到
+        $("#for_header").load(currentUrl + "/header.html",function(){
+            $('#search').on('input',function(){
+                let searchName = $(this).val()
+                let cardHideCount = 0
+                let wrongContent = `
+                                    <p class="no-item">似乎沒有找到您到的商品!!</p>
+                                    <img class="no-itemSearch" src="./img/all_products/no-item.png" alt="">
+                                    <p class="no-item">No Result Found</p>
+                                    <p class="no-item">We can't find any item matching your search</p>
+                                    
+                                    `
+                $('.no-item').remove()
+                $('.no-itemSearch').remove()
+                $('.card').each(function(){
+                    let cardTitle = $(this).children().children()[1].textContent
+                    
+                    if(cardTitle.includes(searchName)){
+                        $(this).show()
+                    }else{
+                        $(this).hide()
+                        cardHideCount ++ 
+                    }
+                    if(cardHideCount === 16){
+                        $('.no-item').remove()
+                        $('.no-itemSearch').remove()
+                        $('.right_content').append(wrongContent)
+                    }
+                })
             })
         })
-    })
-    $("#for_footer").load("../footer.html")
+        $("#for_footer").load(currentUrl + "/footer.html")
+    }else{
+        $("#for_header").load(currentUrl + "/demo/header.html",function(){
+            $('#search').on('input',function(){
+                let searchName = $(this).val()
+                let cardHideCount = 0
+                let wrongContent = `
+                                    <p class="no-item">似乎沒有找到您到的商品!!</p>
+                                    <img class="no-itemSearch" src="./img/all_products/no-item.png" alt="">
+                                    <p class="no-item">No Result Found</p>
+                                    <p class="no-item">We can't find any item matching your search</p>
+                                    
+                                    `
+                $('.no-item').remove()
+                $('.no-itemSearch').remove()
+                $('.card').each(function(){
+                    let cardTitle = $(this).children().children()[1].textContent
+                    
+                    if(cardTitle.includes(searchName)){
+                        $(this).show()
+                    }else{
+                        $(this).hide()
+                        cardHideCount ++ 
+                    }
+                    if(cardHideCount === 16){
+                        $('.no-item').remove()
+                        $('.no-itemSearch').remove()
+                        $('.right_content').append(wrongContent)
+                    }
+                })
+            })
+        })
+        $("#for_footer").load(currentUrl + "/demo/footer.html")
+    }
+
     let clicked_cat = 0
     let clicked_pro = 0
     let clicked_cost = 0

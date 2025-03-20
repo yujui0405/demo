@@ -4,7 +4,14 @@ $(document).ready(function(){
         history.scrollRestoration = 'manual'
     }
     $(".popup_click").click(()=>{
-        $("#for_popup").load("../popLogin.html")//要移到內部，才不會在網頁載入時，突然出現一點點又消失
+        let currentUrl = window.location.protocol + "//" + window.location.hostname 
+        if(window.location.port){
+            currentUrl += ":" + window.location.port
+            $("#for_popup").load("../popLogin.html")//要移到內部，才不會在網頁載入時，突然出現一點點又消失
+        }else{
+            $("#for_popup").load("../demo/popLogin.html")//要移到內部，才不會在網頁載入時，突然出現一點點又消失
+        }
+        
         $('#for_popup').toggleClass('for_popup_none')
         $('.overlay').toggleClass('overlay_show')
     })
