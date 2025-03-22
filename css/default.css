@@ -41,6 +41,7 @@ header .header_content{
     /* outline: 2px solid red; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-basis: 70%;
 }
 header .header_center_content{
@@ -139,6 +140,34 @@ header .header_right_content .input_search > i {
     width: 44px;
     justify-content: center;
     */
+}
+.hamburger{
+    width: 36px;
+    height: 26px;
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1s;
+
+    display: none;
+}
+
+.hamburger .bar{
+    width: 36px;
+    height: 6px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.hamburger.active .bar1{
+    transform: rotate(-45deg) translate(-9px, 7px);
+}
+.hamburger.active .bar1{
+    opacity: 0;
+}
+.hamburger.active .bar1{
+    transform: rotate(45deg) translate(-9px, -8px);
 }
 /* ----------------------------footer---------------------------------------------- */
 footer{
