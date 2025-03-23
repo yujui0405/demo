@@ -1,6 +1,7 @@
 .wrapper{
     padding-top: 88px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 24px auto;
 }
 /* ------------------------------------------- */
@@ -15,7 +16,8 @@
     font-size: 2rem;
     background-color: #e60012;
     color: #ffffff;
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     height: 60px;
     line-height: 60px;
     text-align: center;
@@ -28,7 +30,8 @@
 .wrapper .all_news{
     /* outline: 1px solid red; */
 
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
 
     margin: 0 auto 80px;
 }
@@ -61,9 +64,11 @@
 .wrapper .all_news .news_content{
     border: 1px solid #333333;
     font-size: 2rem;
-    width: 850px;
+    max-width: 850px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, .25);
+    box-sizing: border-box;
 
     padding: 10px 20px;
     margin: 0 auto 24px;

@@ -170,7 +170,7 @@ header .header_right_content .input_search > i {
 .hamburger{
     width: 36px;
     height: 36px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

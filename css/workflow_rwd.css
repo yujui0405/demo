@@ -1,0 +1,90 @@
+@media screen and (max-width: 830px){
+    .workflow .step1{
+        left:26%;
+    }
+    .workflow .step2{
+        left:26%;
+    }
+    .workflow .step3{
+        left:26%;
+    }
+    .workflow .step4{
+        left:26%;
+    }
+    .workflow .step5{
+        left:26%;
+    }
+    .workflow .step6{
+        left:26%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .workflow .step1{
+        left:10%;
+        max-width: 350px;
+        width: 100%;
+    }
+    .workflow .step2{
+        left:10%;
+
+        max-width: 350px;
+        width: 100%;
+        
+    }
+    .workflow .step3{
+        left:10%;
+
+        max-width: 350px;
+        width: 100%;
+        
+    }
+    .workflow .step4{
+        left:10%;
+
+        max-width: 350px;
+        width: 100%;
+        
+    }
+    .workflow .step5{
+        left:10%;
+
+        max-width: 350px;
+        width: 100%;
+        
+    }
+    .workflow .step6{
+        left:10%;
+
+        max-width: 350px;
+        width: 100%;
+    }
+    .workflow .step_down{
+        height: auto;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .workflow .step1{
+        left:6%;
+    }
+    .workflow .step2{
+        left:6%;
+    }
+    .workflow .step3{
+        left:6%;
+        
+    }
+    .workflow .step4{
+        left:6%;
+        
+    }
+    .workflow .step5{
+        left:6%;
+        
+    }
+    .workflow .step6{
+        left:6%;
+    }
+}

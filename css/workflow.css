@@ -7,7 +7,8 @@
 }
 .wrapper{
     
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 48px auto 24px;
 }
 /* -------------------workflow------------------------------ */
@@ -23,10 +24,9 @@
 .workflow .step1{
     width: 400px;
     position: absolute;
-    top: 90px;
-    left: 160px;
-
-    perspective: 500px;
+    top: 9%;
+    left: 13%;
+    /* perspective: 500px; */
     transition: all 1s;
 }
 
@@ -71,50 +71,50 @@
 .workflow .step2{
     width: 400px;
     position: absolute;
-    top: 260px;
-    left: 640px;
+    top: 26%;
+    left: 54%;
 
-    perspective: 500px;
+    /* perspective: 500px; */
     transition: all 1s;
 }
 
 .workflow .step3{
     width: 400px;
     position: absolute;
-    top: 430px;
-    left: 160px;
+    top: 42%;
+    left: 13%;
 
-    perspective: 500px;
+    /* perspective: 500px; */
     transition: all 1s;
 }
 
 .workflow .step4{
     width: 400px;
     position: absolute;
-    top: 600px;
-    left: 640px;
+    top: 58%;
+    left: 54%;
 
-    perspective: 500px;
+    /* perspective: 500px; */
     transition: all 1s;
 }
 
 .workflow .step5{
     width: 400px;
     position: absolute;
-    top: 770px;
-    left: 160px;
+    top: 75%;
+    left: 13%;
 
-    perspective: 500px;
+    /* perspective: 500px; */
     transition: all 1s;
 }
 
 .workflow .step6{
     width: 400px;
     position: absolute;
-    top: 940px;
-    left: 640px;
+    top: 92%;
+    left: 54%;
 
-    perspective: 500px;
+    /* perspective: 500px; */
     transition: all 1s;
 }
 
