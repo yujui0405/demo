@@ -1,0 +1,60 @@
+@media screen and (max-width:600px){
+    .wrapper_popup_detail{
+        max-width: 90vw;
+        width: 400px;
+    }
+    #name, #phone, #email, #street{
+        width: 380px;
+    }
+
+    #email, #password_login{
+        width: 380px;
+    }
+
+    .form_login_input label{
+        left: 24px;
+        z-index: 4;
+    }
+
+    .form_login .form_login_input:nth-child(4){
+        margin-left: 10px;
+    }
+
+    .form_login_input:nth-child(5){
+        margin-left: 10px;
+    }
+    .last_input{
+        height: 120px;
+    }
+    #password{
+        position: absolute;
+        top: 0;
+        left: 7px;
+    }
+
+    #password_confirm{
+        position: absolute;
+        top: 72px;
+        left: 7px;
+    }
+
+    .form_login_input:nth-child(7) label:nth-child(3){
+        top: 64px;
+        left:24px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .wrapper_popup_detail{
+        max-width: 90vw;
+        width: 360px;
+    }
+
+    #name, #phone, #email, #street{
+        width: 320px;
+    }
+
+    #email, #password_login{
+        width: 320px;
+    }
+}
