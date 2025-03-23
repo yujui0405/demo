@@ -15,11 +15,11 @@
 
 #for_popup{
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto auto;
+    margin: 0 auto;
     z-index: 3;
     transition: 1s all;
     visibility: visible;

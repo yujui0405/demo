@@ -1,0 +1,78 @@
+@media screen and (max-width: 830px){
+    /* ----------漢堡和menu動畫--------- */
+    .hamburger{
+        display: flex;
+    }
+    header .header_content{
+        position: fixed;
+        top: 72px;
+        left: -100vw;
+        width: calc(100% - 4px);
+        background-color: #f7e9d8;
+        border-style:inset;
+        border: 2px solid black;
+
+        display: flex;
+        flex-direction: column;
+    
+        transition: 1s;
+    }
+    header .header_center_content span i{
+        display: inline;
+    }
+    header .header_content.small_menu{
+        left: 0;
+    }
+
+
+
+    /* ----------選單和子選單--------- */
+    header .header_center_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .header_center_content span{
+        color: black;
+    }
+    
+    header .header_center_content span a{
+        color: black;
+    }
+
+    header .header_center_content span:nth-child(4) a{
+        text-align: left;
+    }
+
+    header .header_center_content ul{
+        display: none;
+        position: static;
+        border: none;
+    }
+
+    header .header_center_content span:hover{
+        text-decoration: none;
+    }
+
+    header .header_center_content span li{
+        border-bottom: none;
+    }
+
+    /* 必須加下面這個不然hover會影響jquery的slideToggle */
+    header .header_center_content span:hover ul{
+        display: none;
+        z-index: 2;/*避免被swipper蓋過去*/
+    }
+
+
+
+    /* 右側icon */
+    header .header_right_content{
+        display: flex;
+        flex-direction: column;
+    }
+    header .header_right_content .icon a i{
+        color: black;
+    }
+    
+}

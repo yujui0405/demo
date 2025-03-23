@@ -51,6 +51,9 @@ $(document).ready(function(){
             430: {
                 slidesPerView: 1,
             },
+            390: {
+                slidesPerView: 1,
+            },
         }
     });
 })

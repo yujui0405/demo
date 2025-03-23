@@ -23,4 +23,36 @@ $(document).ready(function(){
         $('.overlay').removeClass('overlay_show')
         $('#for_popup').toggleClass('for_popup_none')
     })
+
+    //漢堡點擊動畫
+    $('.hamburger').click(function(){
+        $('.bar').toggleClass('active')
+        $('.header_content').toggleClass('small_menu')
+    })
+
+    // $('header .header_center_content span span').click(function(){
+    //     $(this).siblings('ul').slideToggle(500)
+    // })
+
+    function mobileMenu() {
+        if($(window).width()<=830){
+            $("header .header_center_content span span").off('click').on('click',function(){
+                $(this).siblings('ul').stop(true,true).slideToggle(500)
+            })
+        } else {
+            // 大於 830 時，移除 click，改由 hover 控制
+            $("header .header_center_content span span").off('click')
+            // 把 jQuery 動態加上的 style="display: block;"、style="display: none;" 清空
+            $("header .header_center_content span ul").removeAttr("style")
+        }
+    }
+
+    // 初始呼叫一次
+    mobileMenu()
+
+    // 視窗變化時也重新判斷
+    $(window).resize(function(){
+        mobileMenu()
+    })
+    
 })

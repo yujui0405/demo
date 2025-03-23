@@ -6,9 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/header&popup.css">
+    <link rel="stylesheet" href="./css/header_rwd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    
 </head>
 <body>
     <header>
@@ -18,14 +19,14 @@
             <div class="header_content">
                 <div class="header_center_content">
                     <span>
-                        <a href="./news.html">最新消息</a>
+                        <span>最新消息 <i class="fa-solid fa-caret-down"></i></span>
                         <ul>
                             <li><a href="#">優惠活動</a></li>
                             <li><a href="./news.html">最新消息</a></li>
                         </ul>
                     </span>
                     <span>
-                        <a href="./workflow.html">日本代購</a>
+                        <span>日本代購 <i class="fa-solid fa-caret-down"></i></span>
                         <ul>
                             <li><a href="./workflow.html">代購流程</a></li>
                             <li><a href="#">費用計算</a></li>
@@ -33,7 +34,7 @@
                         </ul>
                     </span>
                     <span>
-                        <a href="./all_products.html">商品一覽</a>
+                        <span>商品一覽 <i class="fa-solid fa-caret-down"></i></span>
                         <ul>
                             <li><a href="./all_products.html">商品一覽</a></li>
                             <li><a href="#">熱門商品</a></li>
@@ -41,7 +42,7 @@
                         </ul>
                     </span>
                     <span>
-                        <a href="">關於我們</a>
+                        <a href="#">關於我們</a>
                     </span>
                 </div>
     
@@ -50,25 +51,28 @@
                         <input type="text" placeholder="Search" id="search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a class="popup_click"><i class="fa-solid fa-user"></i></a>
+                    <div class="icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="popup_click"><i class="fa-solid fa-user"></i></a>
+                    </div>
                 </div>
-                <div class="hamburger">
-                    <div class="bar bar1"></div>
-                    <div class="bar bar2"></div>
-                    <div class="bar bar3"></div>
-                </div>
+                
     
             </div>
-    
+            <div class="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
         </nav>
     </header>
     <!-- 遮罩 -->
     <div class="overlay"></div>
     <!-- popup -->
     <div id="for_popup" class="for_popup_none"></div>
-    <script src="./js/header.js"></script>
 
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>
