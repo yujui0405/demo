@@ -114,6 +114,10 @@ $(document).ready(function(){
             $(this).append(up)
     })
 
+    //---------- rwd 右側menu------------
+    $('.breadcrumb_filter').click(function(){
+        $('.left_content').toggleClass('on')
+    })
 
-    
+
 })
